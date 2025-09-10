@@ -17,6 +17,9 @@ export async function contatoRoutes(fastify, options) {
   fastify.get('/contatos/:id', (request, reply) => 
     contatoController.getContatoById(request, reply)
   );
+  fastify.get('/contatos/search?email=ana.souza@email.com', (request, reply) => 
+    contatoController.getContatoByEmail(request, reply)
+  );
   fastify.post('/contatos', (request, reply) => 
     contatoController.createContato(request, reply)
   );
