@@ -1,5 +1,3 @@
-import { ContatoRepository } from '../repositories/contato.repository.js';
-
 export class ContatoService {
   
   // O Service está "amarrado" à implementação do ContatoRepository.

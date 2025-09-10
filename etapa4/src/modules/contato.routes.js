@@ -1,7 +1,7 @@
 // 1. O arquivo de rotas importa todas as suas dependências.
-import { ContatoRepository } from '../repositories/contato.repository.js';
-import { ContatoService } from '../services/contato.service.js';
-import { ContatoController } from '../controllers/contato.controller.js';
+import { ContatoRepository } from './contato.repository.js';
+import { ContatoService } from './contato.service.js';
+import { ContatoController } from './contato.controller.js';
 
 // 2. A "linha de montagem" para o módulo de contatos acontece aqui.
 const contatoRepository = new ContatoRepository();
