@@ -1,5 +1,5 @@
 // o Controller precisa importar o Model diretamente.
-import { ContatoModel } from '../models/contato.model.js';
+import { ContatoModel } from '../model/contato.model.js';
 
 export class ContatoController {
   

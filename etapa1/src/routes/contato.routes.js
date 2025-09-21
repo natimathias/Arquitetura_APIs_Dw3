@@ -1,4 +1,4 @@
-import { ContatoController } from '../controllers/contato.controller.js';
+import { ContatoController } from '../controller/contato.controller.js';
 
 const contatoController = new ContatoController();
 

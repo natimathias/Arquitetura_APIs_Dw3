@@ -3,31 +3,31 @@
 
 
 ### Contatos
-GET {{url}}/contatos
+GET {{url}}/api/contatos
 
 ### 
-GET {{url}}/contatos/4
+GET {{url}}/api/contatos/d8c8091c-9e08-45d0-93a9-5b7e65402062
 
 
 ### Requisição POST
-POST {{url}}/contatos
+POST {{url}}/api/contatos
 Content-Type: application/json
 
 {
-    "nome":"Josefina",
-    "email": "josefina@gmail.com",
-    "telefone": "44543211234"
+    "nome":"renata",
+    "email": "renata123@gmail.com",
+    "telefone": "44234561234"
 }
 
 ### Requisição PUT
-PUT {{url}}/contatos/1
+PUT {{url}}/api/contatos/d8c8091c-9e08-45d0-93a9-5b7e65402062
 Content-Type: application/json
 
 {    
-    "nome":"João Silva",
-    "email": "joao-silva@gmail.com",
+    "nome":"Josefina Silva",
+    "email": "josefina-silva@gmail.com",
     "telefone": "44123451234"
 }
 
 ### Requisição DELETE
-DELETE {{url}}/contatos/1
+DELETE {{url}}/api/contatos/d8c8091c-9e08-45d0-93a9-5b7e65402062
