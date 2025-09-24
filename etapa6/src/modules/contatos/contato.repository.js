@@ -16,16 +16,13 @@ import { contatos } from '../../infra/db/schema.js';
 export class ContatoRepository {
   constructor() {
     // Guarda a instância do banco de dados para uso nos métodos
-    this.db = db;
-    
+    this.db = db;    
   }
-
 
   // Retorna todos os contatos cadastrados no banco
   async findAll() {
     return this.db.select().from(contatos);
   }
-
 
   // Busca um contato pelo seu ID único
   async findById(id) {
@@ -33,7 +30,6 @@ export class ContatoRepository {
     // Retorna o primeiro resultado ou null se não encontrar
     return result[0] || null;
   }
-
 
   // Cria um novo contato no banco de dados
   // Gera um ID único e insere os dados recebidos
